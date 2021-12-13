@@ -9,6 +9,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { OverviewTextComponent } from './components/overview-text/overview-text.component';
 import { ServicesHomeComponent } from './components/services-home/services-home.component';
+import { ProjectsImageSliderComponent } from './components/projects-image-slider/projects-image-slider.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ServicesHomeComponent } from './components/services-home/services-home.
     FooterComponent,
     HomePageComponent,
     OverviewTextComponent,
-    ServicesHomeComponent
+    ServicesHomeComponent,
+    ProjectsImageSliderComponent
   ],
   imports: [
     BrowserModule,
