@@ -7,6 +7,8 @@ import { CtaCardComponent } from './components/cta-card/cta-card.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { OverviewTextComponent } from './components/overview-text/overview-text.component';
+import { ServicesHomeComponent } from './components/services-home/services-home.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     CtaCardComponent,
     BannerComponent,
     FooterComponent,
-    HomePageComponent
+    HomePageComponent,
+    OverviewTextComponent,
+    ServicesHomeComponent
   ],
   imports: [
     BrowserModule,
