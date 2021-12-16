@@ -11,6 +11,7 @@ import { OverviewTextComponent } from './components/overview-text/overview-text.
 import { ServicesHomeComponent } from './components/services-home/services-home.component';
 import { ProjectsImageSliderComponent } from './components/projects-image-slider/projects-image-slider.component';
 import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ServicesPageComponent } from './pages/services-page/services-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AboutPageComponent } from './pages/about-page/about-page.component';
     OverviewTextComponent,
     ServicesHomeComponent,
     ProjectsImageSliderComponent,
-    AboutPageComponent
+    AboutPageComponent,
+    ServicesPageComponent
   ],
   imports: [
     BrowserModule,
