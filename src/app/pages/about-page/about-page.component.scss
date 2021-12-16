@@ -1,19 +1,29 @@
 .about-page {
+  padding: 1em 0em;
+
+  @media(min-width: 768px) {
+    padding: 3em 0em 0em;
+  }
 
   &__content {
     padding: 1em 0em;
 
     .header {
       color: white;
-      padding: 0.6em 0em 0.6em 2em;
-      width: 1em;
-      font-size: 23px;
-      margin: 2em 0em;
+      padding: 0.3em 0em 0.3em 1.5em;
+      width: 9em;
+      font-size: 17px;
+      margin: 0em 0em;
 
       @media(min-width: 768px) {
-        width: 9em;
-        font-size: 33px;
+        padding: 0.3em 0em 0.3em 2em;
+        width: 7em;
+        font-size: 22px;
 
+      }
+
+      @media(min-width: 2560px) {
+        font-size: 34px;
       }
     }
 
@@ -25,25 +35,103 @@
       background-color: #ECCC3D;
     }
 
+    .text {
+      padding: 2em 2em;
+      letter-spacing: 2px;
+      line-height: 1.5;
+      font-size: 17px;
+
+      @media(min-width: 768px) {
+        padding: 1.5em 2.5em;
+        font-size: 19px;
+
+      }
+
+      @media(min-width: 1440px) {
+        padding: 1.5em 12.5em 1.5em 2.5em;
+        font-size: 21px;
+      }
+
+      @media(min-width: 2560px) {
+        font-size: 27px;
+      }
+    }
+
   }
 
   &__structure {
+    padding: 1em 0em;
+
     .header {
       color: white;
-      padding: 0.6em 0em 0.6em 2em;
-      width: 1em;
-      font-size: 23px;
-      margin: 2em 0em;
+      padding: 0.3em 0em 0.3em 1.5em;
+      width: 9em;
+      font-size: 17px;
+      margin: 0em 0em;
 
       @media(min-width: 768px) {
+        padding: 0.3em 0em 0.3em 2em;
         width: 9em;
-        font-size: 33px;
+        font-size: 22px;
 
+      }
+
+      @media(min-width: 2560px) {
+        font-size: 34px;
       }
     }
 
     .yellow {
-        background-color: #ECCC3D;
+      background-color: #ECCC3D;
+    }
+
+    .cards {
+      display: flex;
+      flex-direction: column;
+      padding: 4em 2em;
+      justify-content: space-around;
+
+      @media(min-width: 768px) {
+        flex-direction: row;
+        padding: 4em 1em;
       }
+
+      @media(min-width: 1280px) {
+        padding: 4em 0em;
+      }
+
+      .card {
+        img {
+          width: 15rem;
+          height: 9rem;
+
+          @media(min-width: 1280px) {
+            width: 23rem;
+            height: 15rem;
+          }
+
+          @media(min-width: 2560px) {
+            width: 40rem;
+            height: 26rem;
+          }
+        }
+
+        .text {
+          font-size: 20px;
+          font-weight: 600;
+          padding: 1em 0em;
+
+          @media(min-width: 1440px) {
+            font-size: 22px;
+          }
+
+          @media(min-width: 2560px) {
+            font-size: 22px;
+          }
+
+          p {font-weight: 400}
+        }
+      }
+    }
   }
 }
