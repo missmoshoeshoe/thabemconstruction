@@ -13,6 +13,8 @@ import { ProjectsImageSliderComponent } from './components/projects-image-slider
 import { AboutPageComponent } from './pages/about-page/about-page.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { QuotationPageComponent } from './pages/quotation-page/quotation-page.component';
+import { GalleryPageComponent } from './pages/gallery-page/gallery-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
     ProjectsImageSliderComponent,
     AboutPageComponent,
     ServicesPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    QuotationPageComponent,
+    GalleryPageComponent
   ],
   imports: [
     BrowserModule,
