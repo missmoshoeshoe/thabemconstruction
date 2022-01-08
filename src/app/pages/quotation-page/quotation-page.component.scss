@@ -1,6 +1,6 @@
 .quotation-page {
   padding:1.5em 0em;
-  
+
     &__content {
         .header {
             color: white;
@@ -28,5 +28,40 @@
           .yellow {
             background-color: #ECCC3D;
           }
+
+          .text {
+            padding: 2em 2em;
+            letter-spacing: 2px;
+            line-height: 1.5;
+            font-size: 17px;
+      
+            @media(min-width: 768px) {
+              padding: 1.5em 2.5em;
+              font-size: 19px;
+      
+            }
+      
+            @media(min-width: 1440px) {
+              padding: 1.5em 12.5em 1.5em 2.5em;
+              font-size: 21px;
+            }
+      
+            @media(min-width: 2560px) {
+              font-size: 27px;
+            }
+          }
+
+          .form {
+            padding: 1.5rem 0.3rem;
+          .form-feild {
+            display: flex;
+            flex-direction: column;
+            padding: 0.7rem 3rem;
+
+            .input {
+              width: 70%;
+            }
+          }
+        }
 }
 }
