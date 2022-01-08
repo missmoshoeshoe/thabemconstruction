@@ -1,0 +1,33 @@
+.gallery-page {
+  padding:1.5em 0em;
+  
+    &__content {
+        .header {
+            color: white;
+            padding: 0.3em 0em 0.3em 1.5em;
+            width: 9em;
+            font-size: 17px;
+            margin: 0em 0em;
+      
+            @media(min-width: 768px) {
+              padding: 0.3em 0em 0.3em 2em;
+              width: 7em;
+              font-size: 22px;
+      
+            }
+      
+            @media(min-width: 2560px) {
+              font-size: 34px;
+            }
+          }
+      
+          .blue {
+            background-color: #35AAB4;
+          }
+      
+          .yellow {
+            background-color: #ECCC3D;
+          }
+}
+
+}
