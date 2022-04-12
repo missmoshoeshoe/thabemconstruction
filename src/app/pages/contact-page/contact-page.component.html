@@ -1,4 +1,4 @@
-<app-banner></app-banner>
+<app-page-banner [pageBanner]="bannerData"></app-page-banner>
 <section class="contact-page">
   <div class="contact-page__content">
     <div class="header blue">
@@ -15,20 +15,24 @@
         <span>Website: www.thabemconstruction.co.za.za</span>
 
       </div>
-      <div class="form">
-          <form >
-            <div> <input type="text" class="form-control" placeholder="Test"> </div> 
-             <div> <input type="text" class="form-control" placeholder="Test"> </div>
-             <div> <input type="text" class="form-control" placeholder="Test"></div>
-             <div> <input type="text" class="form-control" placeholder="Test"></div>
-              <button>Send</button>
-          </form>
+      <div class="available-services">
+     <div class="heading"> Services Included: </div>  
+      <div class="services">
+       <div class="service">Residential Construction</div> 
+       <div class="service">Granite Services</div>
+       <div class="service">Renovations</div> 
+       <div class="service">Cleaning Services</div> 
+       <div class="service">Road Construction</div>
+       <div class="service">Road Maintenance</div>    
+      </div> 
       </div>
     </div>
-    <div class="header yellow">
-      Visit Us
-    </div>
+    <div class="contact-page__map">
+      <div class="header yellow">
+        Visit Us
+      </div>
+    <iframe class="embed_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3595.6642724431595!2d27.862364314855753!3d-25.682421583672816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebe2c4f8c0c4d0d%3A0x36ae40467ad9ae81!2s125%20R511!5e0!3m2!1sen!2sza!4v1644707945231!5m2!1sen!2sza" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   </div>
-
+</div>
 
 </section>

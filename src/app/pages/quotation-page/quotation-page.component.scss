@@ -1,68 +1,78 @@
 .quotation-page {
-  padding: 1.5em 0em;
 
-  &__content {
-    .header {
-      color: white;
-      padding: 0.3em 0em 0.3em 1.5em;
-      width: 9em;
-      font-size: 17px;
-      margin: 0em 0em;
+  // padding: 1.5em 0em;
+  .header {
+    color: white;
+    padding: 0.3em 0em 0.3em 1.5em;
+    width: 9em;
+    font-size: 17px;
+    margin: 1em 0em;
+    font-family: 'Rowdies', cursive;
 
-      @media(min-width: 768px) {
-        padding: 0.3em 0em 0.3em 2em;
-        width: 7em;
-        font-size: 22px;
+    @media(min-width: 768px) {
+      padding: 0.3em 0em 0.3em 2em;
+      width: 7em;
+      font-size: 22px;
 
-      }
-
-      @media(min-width: 2560px) {
-        font-size: 34px;
-      }
     }
 
-    .blue {
-      background-color: #35AAB4;
+    @media(min-width: 2560px) {
+      font-size: 34px;
     }
+  }
 
-    .yellow {
-      background-color: #ECCC3D;
-    }
+  .blue {
+    background-color: #35AAB4;
+  }
 
+  .yellow {
+    background-color: #ECCC3D;
+  }
+
+  &__intro {
     .text {
-      padding: 2em 2em;
-      letter-spacing: 2px;
-      line-height: 1.5;
-      font-size: 17px;
-
-      @media(min-width: 768px) {
-        padding: 1.5em 2.5em;
-        font-size: 19px;
-
-      }
-
-      @media(min-width: 1440px) {
-        padding: 1.5em 12.5em 1.5em 2.5em;
-        font-size: 21px;
-      }
-
-      @media(min-width: 2560px) {
-        font-size: 27px;
-      }
+      padding: 1em 2em;
     }
 
-    .form {
-      padding: 1.5rem 0.3rem;
 
-      .form-feild {
+  }
+
+  &__qoute-form {
+    form {
+      .form-group {
         display: flex;
         flex-direction: column;
-        padding: 0.7rem 3rem;
+        padding: 0.5em 2em;
 
-        .input {
-          width: 70%;
+        @media(min-width: 768px) {
+          padding: 0.5em 3em;
+        }
+
+        label {
+          padding: 0em 0em 0.5em 0em;
+          font-weight: 600;
+          font-family: 'Quicksand', sans-serif;
+        }
+
+        input {
+          margin: 0em;
+          padding: 2px;
+
+          @media(min-width: 768px) {
+            margin: 0em 10em 0em 0em;
+          }
+        }
+        textarea {
+          padding: 0.5em 2em;
+
+          @media(min-width: 768px) {
+            padding: 0.5em 3em; 
+          }
         }
       }
     }
+  }
+  button {
+    margin: 1em 2em;
   }
 }

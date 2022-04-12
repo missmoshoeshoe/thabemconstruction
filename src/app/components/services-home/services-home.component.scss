@@ -21,6 +21,54 @@
   }
 
   &__cards {
-    padding: 4em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+
+    @media(min-width:768px) {
+      flex-direction: row;
+    }
+
+    @media(min-width:1280px) {
+      padding: 4em;
+    }
+
+    .card {
+      padding: 10px;
+
+
+      .text {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+        color: black;
+        font-family: 'Quicksand', sans-serif;
+
+
+        @media(min-width: 768px) {
+          text-align: center;
+        }
+      }
+
+      img {
+
+        @media(min-width: 768px) {
+          width: 20vh;
+        }
+
+        @media(min-width: 1024px) {
+          width: 30vh;
+        }
+
+        @media(min-width: 1280px) {
+          width: 15vh;
+        }
+
+        @media(min-width: 1440px) {
+          width: 30vh;
+        }
+
+      }
+    }
   }
 }

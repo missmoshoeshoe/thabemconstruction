@@ -1,7 +1,25 @@
 .banner {
-background-image: url('/assets/images/banners/banner01.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-width: 100%;
-height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 80vh;
+  animation: cover 12s linear 5s infinite alternate backwards running;
+
+  @keyframes cover {
+    from {
+      background-image: url('/assets/images/banners/banner05.jpg');
+    }
+
+    to {
+      background-image: url('/assets/images/banners/banner03.jpg');
+    }
+  }
+
+  .overlay {
+    height: 80vh;
+    background-size: cover;
+    background-color: #35AAB4;
+    opacity: 0.2;
+    z-index: 2;
+  }
 }

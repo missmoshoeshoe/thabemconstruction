@@ -1,50 +1,64 @@
-<app-banner></app-banner>
+<app-page-banner [pageBanner]="bannerData"></app-page-banner>
 <section class="quotation-page">
-    <div class="quotation-page__content">
+  <div class="quotation-page__intro">
     <div class="header blue">
-        Quotation
-      </div>
-      <div class="text">
+      Quotation
+    </div>
+    <div class="text">
       We service a number of professionals and public sectors.
       We have acknowledged that the best work is that done by skillful workers.
       We pride ourselves on being a best company and we believe that any professional relationship should be mutual
       beneficial and this is our goal for each and every client that we
       render our services for, without distinguishing between the size of work load and its
       complexity
+    </div>
+  </div>
+  <div class="header yellow">
+    Full Details
+  </div>
+  <div class="quotation-page__qoute-form">
+    <form (ngSubmit)="submit()">
+      <div class="form-group">
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" class="form-control">
+      </div>
+      <pre></pre>
+      <div class="form-group">
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" class="form-control">
+      </div>
+      <pre></pre>
+      <div class="form-group">
+        <label for="phonename">Phone Number:</label>
+        <input type="text" name="phonename" class="form-control">
+      </div>
+      <pre></pre>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="text" name="email" class="form-control">
+      </div>
+
+      <div class="header blue">
+        Service
+      </div>
+      <div class="form-group">
+        <label for="email">Select</label> 
+        <!-- <input type="text" name="email" class="form-control"> To Do: fix select -->
       </div>
       <div class="header yellow">
-        Full Details
+        Message
       </div>
-      <div class="form">
-      <div class="form-feild">
-      <label for="name" class="form-label">Full Name</label>
-      <input type="text" class="form-control" id="name">
+      <div class="form-group">
+        <label for="message">Type Message:</label>
+        <textarea type="text" rows="6" class="form-control"></textarea>
       </div>
-      <div class="form-feild">
-        <label for="name" class="form-label"> Phone Number</label>
-        <input type="text" class="form-control" id="number">
-        </div>
-        <div class="form-feild">
-          <label for="name" class="form-label">E-mail</label>
-          <input type="text" class="form-control" id="email">
-          </div>
-        </div>
-          <div class="header blue">
-            Service
-          </div>
-          <div class="form-feild">
-          <label for="inputState" class="form-label">Service Enquiry</label>
-        <select id="inputState" class="form-select">
-          <option selected>Choose...</option>
-          <option>Residential Construction</option>
-          <option>Granite Services</option>
-          <option>Renovations</option>
-          <option>Cleaning Services</option>
-          <option>Road Construction</option>
-          <option>Road Maintenance</option>
-          <option>All</option>
-        </select>
-    </div>
-    </div>
-
+      <div class="header blue">
+        Uploads
+      </div>
+      <div class="form-group">
+        <!-- <input type="file" class="form-control" (change)="onFileSelect($event)" /> ToDo: Fix file upload -->
+      </div>
+      <button type="btn" type="submit">Submit</button>
+    </form>
+  </div>
 </section>

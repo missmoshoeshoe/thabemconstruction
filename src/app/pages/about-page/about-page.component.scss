@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 .about-page {
   padding: 1em 0em;
 
@@ -14,6 +18,8 @@
       width: 9em;
       font-size: 17px;
       margin: 0em 0em;
+      font-family: 'Rowdies', cursive;
+
 
       @media(min-width: 768px) {
         padding: 0.3em 0em 0.3em 2em;
@@ -23,6 +29,7 @@
       }
 
       @media(min-width: 2560px) {
+        padding: 0.6em 0em 0.6em 2em;
         font-size: 34px;
       }
     }
@@ -40,6 +47,7 @@
       letter-spacing: 2px;
       line-height: 1.5;
       font-size: 17px;
+      font-family: 'Quicksand', sans-serif;
 
       @media(min-width: 768px) {
         padding: 1.5em 2.5em;
@@ -68,6 +76,7 @@
       width: 9em;
       font-size: 17px;
       margin: 0em 0em;
+      font-family: 'Rowdies', cursive;
 
       @media(min-width: 768px) {
         padding: 0.3em 0em 0.3em 2em;
@@ -120,6 +129,7 @@
           font-size: 20px;
           font-weight: 600;
           padding: 1em 0em;
+          font-family: 'Quicksand', sans-serif;
 
           @media(min-width: 1440px) {
             font-size: 22px;
@@ -129,7 +139,10 @@
             font-size: 22px;
           }
 
-          p {font-weight: 400}
+          p {
+            font-weight: 400;
+            font-family: 'Quicksand', sans-serif;
+          }
         }
       }
     }

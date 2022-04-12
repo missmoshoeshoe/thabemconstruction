@@ -1,0 +1,8 @@
+<section class="page-banner" *ngFor="let bannerData of pageBanner">
+  <div class="header yellow">
+    {{bannerData.title}}
+  </div>
+  <div class="page-banner__overlay">
+    <img class="page-banner__background" src="{{bannerData.imgUrl}}">
+  </div>
+</section>
